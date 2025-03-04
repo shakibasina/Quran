@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ختم قرآن</title>
+        <!-- theme css -->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/swiper-gallery.css" rel="stylesheet">
+        <script>
+            function hideLoading(){
+                document.querySelector("body.loading").classList.remove("loading");
+                document.querySelector(".loading-box").classList.add("hidden")
+            }
+            window.onload = hideLoading;
+        </script>
+</head>
+<body class="loading vazir bg-light" dir="rtl">
+        <!-- Loading Page -->
+        <style>
+            body{
+                overflow: hidden;
+            }
+            .loading-box{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 99999;
+                justify-content: center;
+                align-items: center;
+            }
+            .loading-box.hidden{
+                display: none;
+                opacity: 0;
+                visibility: hidden;
+            }
+            .loader {
+            color: #fff;
+            width: 4px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
+            transform: translateX(-38px);
+            animation: l21 .5s infinite alternate linear;
+            margin-right: 50%;
+            margin-top: 200px
+          }
+          
+          @keyframes l21 {
+            50%  {box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px}
+            100% {box-shadow: 19px 0 0 0  , 38px 0 0 3px, 57px 0 0 7px}
+          }
+          
+          body.loading{
+            overflow: hidden;
+            pointer-events: none;
+            user-select: none;
+          }
+          </style>
+        <div class="loading-box">
+            <div class="loader"></div>
+        </div>
+    
+
+        <div class="container-fluid">
+            <nav class="navbar navbar-light bg-white align-items-center">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/img/quran.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-top">
+                    <span class="pt-1">ختم قرآن</span>
+                </a>
+              </nav>
+
+              <section>
+                <div class="row mt-5">
+                    <div class="bg-white rounded box-shadow col-md-6 col-11 mx-auto p-0 pb-3"
+                    style="border-top-bottom-radius: 20px; border-bottom-right-radius: 20px;">
+                        <div class="header px-5 py-3 text-white" style="background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+border-top-left-radius: 20px; border-top-right-radius: 20px;">
+                            <div class="row gy-2">
+                                <div class="col-12">ختم شماره <span id="khatm"></span></div>
+                                <div class="col-12 fs-5 fw-bold" id="surah"></div>
+                                <div class="col-12">آیه <span id="ayeh"></span></div>
+                            </div>
+                        </div>
+                        <div class="content p-3">
+                            <div id="verse"></div>
+                            <div class="translation text-secondary mt-2" id="translate"></div>
+                        </div>
+                        <div class="btns text-center border-top pt-3">
+                            <a href="#" id="ayat" class=" text-secondary" target="_blank">آیه های قبل و بعد</a>
+                            <a href="#" class="btn fw-bold" id="getVerse">آیه جدید</a>
+                        </div>
+                    </div>
+                </div>
+              </section>
+              <footer>
+                <a href="https://www.eitaa.com/sshakibaa" class="d-block fw-bold text-center mt-5">sina shakiba</a>
+              </footer>
+
+        </div>
+
+    <!-- End All Snigle Projects -->
+    <script src="assets/js/jquery-3.6.4.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
